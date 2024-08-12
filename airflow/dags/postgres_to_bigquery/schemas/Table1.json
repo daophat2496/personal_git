@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Id",
+        "type": "INT64",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "Column1",
+        "type": "INT64",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "Column2",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    }
+]

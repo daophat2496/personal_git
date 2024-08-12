@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Id",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "CreationTime",
+        "type": "TIMESTAMP",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "CreatorUserId",
+        "type": "INT64",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "LastModificationTime",
+        "type": "TIMESTAMP",
+        "mode": "NULLABLE"
+    }, 
+    {
+        "name": "Column1",
+        "type": "INT64",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "Column2",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    }
+]

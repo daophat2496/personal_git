@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Id",
+        "type": "bigint",
+        "nullable": "NO"
+    },
+    {
+        "name": "Column1",
+        "type": "integer",
+        "nullable": "YES"
+    },
+    {
+        "name": "Column1",
+        "type": "character varying",
+        "nullable": "YES"
+    }
+]

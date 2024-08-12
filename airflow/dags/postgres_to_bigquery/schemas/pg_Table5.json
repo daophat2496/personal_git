@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Id",
+        "type": "uuid",
+        "nullable": "NO"
+    },
+    {
+        "name": "CreationTime",
+        "type": "timestamp without time zone",
+        "nullable": "NO"
+    },
+    {
+        "name": "CreatorUserId",
+        "type": "bigint",
+        "nullable": "YES"
+    },
+    {
+        "name": "LastModificationTime",
+        "type": "timestamp without time zone",
+        "nullable": "YES"
+    },
+    {
+        "name": "Column1",
+        "type": "integer",
+        "nullable": "YES"
+    },
+    {
+        "name": "Column1",
+        "type": "character varying",
+        "nullable": "YES"
+    }
+]
