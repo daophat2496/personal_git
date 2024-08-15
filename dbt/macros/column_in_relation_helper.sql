@@ -103,3 +103,23 @@
 {% macro get_unpivot_column_in_statement(_prop_list = []) %}
     {{ return (_prop_list | join (", ")) }}
 {% endmacro %}
+
+----
+
+{% macro get_select_all_except_field_string(_relation, except_colums, _table_alias = "") %}
+    {%- set result = [] -%}
+    {%- set prefix_length = _prefix | length -%}
+    {%- set column_list = adapter.get_columns_in_relation(_relation) | map(attribute = "name") -%}
+
+    {% for column in column_list %}
+        {% if column == except_colums %}
+            {% continue %}
+        {% elif _table_alias | length == 0 %}
+            {{ result.append(column) }}
+        {% else %}
+            {{ result.append(_table_alias ~ "." ~ column) }}
+        {% endif %}
+    {% endfor %}
+
+    {{ return(result | join(", ")) }}
+{% endmacro %}
