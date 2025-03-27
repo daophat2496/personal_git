@@ -13,22 +13,3 @@ def get_openai_api_key():
     load_env()
     openai_api_key = os.getenv("OPENAI_API_KEY")
     return openai_api_key
-
-def get_llama_cloud_api_key():
-    load_env()
-    llama_cloud_api_key = os.getenv("LLAMA_CLOUD_API_KEY")
-    return llama_cloud_api_key
-
-def get_llama_cloud_base_url():
-    load_env()
-    llama_cloud_base_url = os.getenv("LLAMA_CLOUD_BASE_URL")
-    return llama_cloud_base_url
-
-def extract_html_content(filename):
-    try:
-        with open(filename, 'r') as file:
-            html_content = file.read()
-            html_content = f""" <div style="width: 100%; height: 800px; overflow: hidden;"> {html_content} </div>"""
-            return html_content
-    except Exception as e:
-        raise Exception(f"Error reading file: {str(e)}")
